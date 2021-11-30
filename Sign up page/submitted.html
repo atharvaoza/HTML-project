@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Account created</title>
+        <link rel="stylesheet" href="test2.css">
+    </head>
+
+    <body>
+     
+       <main>
+        <h1>Thank you for signing up!</h1>
+        <p><a href="phase1.html">Go back</a></p>
+    </main>
+       <script>
+           const submittedList = document.getElementById('submitted')
+           new URLSearchParams(window.location.search).forEach(value,name) => {
+               submittedList.append('S{name}: ${value}')
+               submittedList.append(document.createElement('br'))
+           })
+       </script>
+
+        
+    </body>
+</html>
