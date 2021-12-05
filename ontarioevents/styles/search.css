@@ -1,0 +1,31 @@
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+#submit-btn {
+    margin-top: 10px;
+}
+
+form {
+    margin-top: 50px;
+}
+
+@media screen and (min-width: 740px) {
+    #search {
+        width: 500px;
+        height: 30px;  
+     }
+
+
+}

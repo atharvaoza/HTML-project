@@ -1,0 +1,89 @@
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+.container-main {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+ 
+.header {
+    grid-column: 1 / -1;  /* spans header to the last column line  */
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: flex-end;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/audience.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    min-height: 50vh;
+    color: #ffffff;
+
+
+}
+
+
+
+.header h1, h3 {
+    color: white;
+}
+
+.header h1 {
+    font-size: 4rem;
+    padding-top: rem;
+
+}
+
+.header h3 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 900;
+}
+
+
+@media screen and (max-width: 740px) {
+    .container-main {
+        grid-template-columns: 1fr;
+    }
+}
+
+hr {
+    color: #ffffff;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    gap: 5px;
+    color: black;
+
+}
+
+.column h2 {
+    font-family:'Bebas Neue', cursive;
+    font-size: 2rem;
+    color: #FF0000
+}
+
+#column-1 p {
+    text-align: center;    
+}
+
+#column-2 p {
+    text-align: center;    
+}
+
+.column a {
+    text-decoration: none;
+    color: #FF0000;
+}
+
+.column a:hover {
+    color: black;
+}

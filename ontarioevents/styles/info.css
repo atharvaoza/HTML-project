@@ -1,0 +1,67 @@
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Bebas Neue', cursive;
+}
+
+body {
+    background-color: rgb(235, 235, 232);
+}
+
+main {
+    background-color: #ffffff;
+    margin: 30px;
+    height: auto;
+}
+
+a {
+    color: rgb(201, 74, 65);
+    text-decoration: none;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 15px;
+}
+
+
+.event-heading {
+    background-color: rgb(32, 29, 30);
+    color: #ffffff;
+    padding: 30px;
+}
+
+.event-heading  h1{
+    font-size: 4rem;
+}
+
+.event-heading h3 {
+    color: rgb(201, 74, 65); 
+}
+
+#main {
+    max-width: 60rem;
+    padding: 20px;
+}
+
+
+#side {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+
+  
+
+@media screen and (min-width: 740px) {
+
+    .main-container{
+        grid-template-columns: 2fr 0.5fr;
+    }
+
+    footer {
+        margin-top: 110px;
+    }
+}
