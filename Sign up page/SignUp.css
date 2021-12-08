@@ -4,6 +4,7 @@ body {
     margin: auto;
 }
 
+
 /*navigation bar*/
 
 header {
@@ -45,6 +46,10 @@ header ul li a {
     color: white;
 }
 
+header a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
 
 
 /* For screen size greater than 740px*/
@@ -167,5 +172,6 @@ footer a {
 }
 
 .fa {
-    font-size: 50px; 
+    font-size: 50px;
+    
 }
