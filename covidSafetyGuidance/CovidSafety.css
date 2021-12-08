@@ -5,7 +5,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 body {
     background-color: white;
     min-height: 100vh;
@@ -83,23 +82,33 @@ header ul li a {
         height: auto;
     }
 
-    .text-wrapper {
+    #text-wrapper {
         width: 100%;
         position: relative;
         margin-top: -10%;
     }
 
-    .text-wrapper h1 {
+    #text-wrapper h1 {
         text-align: center;
-        color: white;
+        color: rgb(58, 185, 122);
         font-size: 4vw;
         padding-bottom: 1.3em;
     }
 
+    h1 {
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
     h3 {
-        padding-left: 5px;
+        padding-left: 50px;
         padding-right: 30px;
         padding-bottom: 30px;
+        padding-top: 60px;
         text-align: justify;
     }
 
@@ -175,7 +184,7 @@ header ul li a {
         background-color: #f1f1f1;
     }
 
-    /* footer*/
+/* footer*/
 
 footer {
     font-family: sans-serif;
