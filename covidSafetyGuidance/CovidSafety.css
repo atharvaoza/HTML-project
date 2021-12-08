@@ -5,6 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 body {
     background-color: white;
     min-height: 100vh;
@@ -27,7 +28,8 @@ header .nav_events {
     position: relative;
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;   
+    font-size: 1.2rem;  
+    margin-left: 40px; 
 }
 
 header ul {
@@ -37,6 +39,7 @@ header ul {
     gap: 1rem;
     list-style: none;
     align-items: center;
+    margin-right: 40px;
 }
 
 header ul li {
@@ -48,6 +51,11 @@ header ul li a {
     position: relative;
     text-decoration: none;
     color: white;
+}
+
+header a:hover {
+    color: #000000;
+    text-decoration: underline;
 }
 
 .sticky {
