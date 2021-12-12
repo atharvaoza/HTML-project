@@ -1,27 +1,45 @@
-function validate() 
-{
-    var name = document.getElementById('name')
-    var email = document.getElementById('email')
-    var password = document.getElementById('password')
+'use strict';
 
-    
-    if (name.value == "") {
-        alert("This is a required field");
-        return false;
+const $ = (selector) => document.querySelector(selector);
+
+const processEntries = () => {
+    //get form controls to check for validity
+    const name = $('#full_name');
+    const email = $('#email');
+    const password = $('#password');
+
+    //validate name
+    let isValid = true;
+    if (name.value == '') {
+        name.nextElementSibling.textContent = 'This is a required field.';
+        isValid = false;
+    } else {
+        name.nextElementSibling.textContent = '';
     }
-    else if (email.value == "") {
-        alert("This is a required field");
-        return falese;
+
+    //validate email
+    if (email.value == '') {
+        email.nextElementSibling.textContent = 'This is a required field.';
+        isValid = false;
+    } else {
+        email.nextElementSibling.textContent = '';
     }
-    else if (password.value == "") {
-        alert("This is a required field");
-        return false;
+
+    //validate password
+    if (password.value == '') {
+        password.nextElementSibling.textContent = 'This is a required field.';
+        isValid = false;
+    } else {
+        password.nextElementSibling.textContent = '';
     }
-    else if (password.value.length < 6) {
-        alert("Password must be more than 6 characters");
-        return false;
-    }
-    else {
-        return true;
-    }
+//submit form if all fields are valid
+if (isValid == true) {
+    $('form').submit();
 }
+};
+
+ document.addEventListener('DOMContentLoaded', () => {
+     $('#submit').addEventListener('click', processEntries);
+
+     });   
+
