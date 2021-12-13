@@ -6,7 +6,7 @@ let diff = imgArray.length - 1;
 
 let delay = 2000;
 
-// setInterval("ChangeImage(-1)", delay);
+setInterval("ChangeImage(-1)", delay);
 
 function ChangeImage(direction)
 {
