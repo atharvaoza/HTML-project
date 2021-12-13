@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <title> Ontario Events</title>
+       <meta charset="utf-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+       <meta name="description" content="Learn about events happening in any city around Ontario" />
+       <meta name="keywords" content="events festivals canada ontario concerts" />
+       <link rel="stylesheet" href="../styles/confirm.css" />
+       <script src="https://kit.fontawesome.com/6a3e3b438c.js" crossorigin="anonymous"></script>
+  
+       <title>Ontario Events</title>
+    </head>
+    <body>
+        
+       
+       <header>
+
+            <nav class="nav-container">
+    
+                <a href="">Ontario Events</a>
+    
+                <ul> 
+    
+                    <li><a href="">Home</a></li>
+    
+                    <li><a href="">Events</a></li>
+    
+                    <li><a href="">Organise</a></li>
+    
+                    <li><a href="">Search</a></li>
+    
+                    <li><a href="">Log in</a></li>
+    
+                </ul>
+    
+            </nav>
+    
+        </header>
+        <main>
+            <aside1>
+            <h2>Reach out to us!</h2>
+            <p1>Got a question? Contact us:</p1>
+            
+            <div class ="container">
+                 <form action="confirm.html" method="get">
+                     <div class="input">
+                     <label for="fname">First Name</label>
+                     <input type="text" id="fname" name="fname" placeholder="Your first name" required>
+                     <p id='formvaidfname'></p>
+                     </div>
+                   
+                    <div class="input">
+                     <label for="lname">Last Name</label>
+                     <input type="text" id="lname" name="lname" placeholder="Your last name" required>
+                     <p id='formvaidlname'></p> </div>
+
+                      <div class="input">
+                     <label for="email">E-mail ID</label> 
+                     <input type="text" id="email" name="email" placeholder="Your e-mail" required>
+                     <p id='formvaidemail'></p>
+                     </div>
+
+                     <div class="input">
+                     <label for="subject">Message</label> 
+                     <textarea id="subject" name="subject" placeholder="Your meassage" required></textarea>
+                     <p id='formvaidmessage'></p>
+                     </div>
+
+                     
+
+                    <input type="submit" id="submit" value="Submit" onclick="checkReqFields()">
+
+                 </form>
+
+            </div>
+        
+            </aside1>
+
+            <aside2 >
+                
+                
+                
+                    <p><img src="../images/facebook.png" alt="icon of facebook"></p>
+                   <p><img src="../images/instagram.png"  alt="icon of instagram"></p>
+                   <p><img src="../images/twitter.png" alt="icon of twitter"></p>
+                   <p><img src="../images/linkedin.png" alt="icon of linkedin"></p>
+                  
+                <p1><img src="../images/event1.jpg" alt=" an event"></p1>
+                <p1><img src="../images/event2.jpg" alt=" an event"></p1>
+               
+            </aside2>
+        </main>
+        <footer>
+            <div class="container-footer">
+
+                <div class="logo">
+    
+                    <h2>Ontario Events</h2> 
+    
+                    <a href=""><i class="fab fa-facebook-square"></i> </a>
+    
+                    <a href=""><i class="fab fa-instagram-square"></i></a>
+    
+                    <a href=""><i class="fab fa-twitter"></i></a> 
+    
+                </div>
+    
+     
+    
+        
+    
+                <ul>
+    
+                    <li><a href="">Events</a></li>
+    
+                    <li><a href="">Organise</a></li>
+    
+                    <li><a href="">Search</a></li>
+    
+                    <li><a href="co.html">careers</a></li>
+    
+                </ul>
+    
+    
+    
+                <ul>
+    
+                    <li><a href="">Log in</a></li>
+    
+                    <li><a href="">Sign up</a></li>
+    
+                </ul>
+    
+    
+    
+                <ul>
+    
+                    <li><a href="contact.html">Contact Us</a></li>
+    
+                    <li><a href="" >FAQ</a></li>
+    
+                    <li><a href="">Covid-19 Guidelines</a></li>
+    
+                    <li><a href="">About</a></li>
+    
+                </ul>
+    
+    
+    
+            </div>
+    
+                
+    
+                
+    
+            <div class="copyright">
+    
+                <p>
+    
+                    &copy; RESTfull Coders
+    
+                </p>
+    
+    
+    
+            </div>
+    
+    
+    
+        
+    
+        </footer>
+     
+        <script>function checkReqFields() {
+            let errormessage="";
+            var returnValue;
+            var fname = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+            var email = document.getElementById("email").value;
+            var Message = document.getElementById("subject").value;
+        
+            returnValue = true;
+            if (fname.trim() == "") {
+                document.getElementById('formvaidfname').innerHTML = "*This is required field ";
+                returnValue = false;
+            }
+              if (lname.trim() == "") {
+                document.getElementById('formvaidlname').innerHTML = "*This is required field ";
+                returnValue = false;
+            }
+            if (email.trim() == "") {
+                document.getElementById('formvaidemail').innerHTML = "*This is required field ";
+                returnValue = false;
+            }
+              if (Message.trim() == "") {
+                document.getElementById('formvaidmessage').innerHTML = "*Please write your message ";
+                returnValue = false;
+            }
+          
+        
+            return returnValue;
+        }</script>
+    
+       
+    </body>
+</html>
