@@ -6,10 +6,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="keywords" content="Ontario events tickets functions">
         <title>Ontario events</title>
+
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
         <link rel="stylesheet" href="projDesign.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <body>
+    
         <div id="wrapper">
             <header>
                 <nav id="headernav">
@@ -23,21 +29,82 @@
                 <h4>Ontario Events</h4>
             </header>
 
+        <body>
+
             <h1>
                 Top Things To Do In Toronto
             </h1>
+            <div id="images">
+                <img id="slideshow" src="images/Canadian-Opera-Company.jpg">
 
-            <ul>
-                <li><img src="Images/image.jpg"></li>
-                <li><a href="Attractions.html">Attractions</a></li>
-                <li><img src="Images/Canadian-Opera-Company-Exterior.jpg"></li>
-                <li><a href="Arts.html">Arts, Culture & Entertainment</a></li>
-                <li><img src="Images/167_3_0518_jpeg_b2c56852-f501-476a-8301-0dc59185cd44.jpg"></li>
-                <li><a href="Outdoor.html">Outdors & Recreation</a></li>
-                <li><img src="Images/167_3_0463_jpeg_72434e2b-3f66-4a6b-8254-a2149d9df632.jpg"></li>
-                <li><a href="Shopping.html">Shopping</a></li>
-            </ul>
+                <h2>Categories</h2>
 
+                <div id="accordion">
+                    <h3>MUSIC</h3>
+                    <div id="accordionZ">
+                        <p>
+                            <h3 id="headersLeft">CONCERTS</h3>
+                            <button class="accordion">RHYE</button>
+                            <div class="panel">
+                                <p>
+                                    Date: 20th December 2021<br>
+                                    Time: 1800 EST<br>
+                                    Venue: Scotiabank Arena
+                                </p>
+                            </div><br>
+                            <button class="accordion">RADIOHEAD</button>
+                            <div class="panel">
+                                <p>
+                                    Date: 20th December 2021<br>
+                                    Time: 1800 EST<br>
+                                    Venue: Scotiabank Arena
+                                </p>
+                            </div><br>
+                            <button class="accordion">METALLICA</button>
+                            <div class="panel">
+                                <p>
+                                    Date: 20th December 2021<br>
+                                    Time: 1800 EST<br>
+                                    Venue: Scotiabank Arenas
+                                </p>
+                            </div>
+                        </p>
+                    </div>
+                    <h3>ART</h3>
+                    <div id="accordionZ1">
+                        <p>
+                            <h3 id="headersLeft">EXHIBITIONS</h3>
+                            <button class="accordion">Van Gogh exhibition</button>
+                            <div class="panel">
+                                <p>
+                                    Date: 28th December 2021<br>
+                                    Time: 1800 EST<br>
+                                    Venue: 1 Yonge St, Toronto, ON M5E 1W7
+                                </p>
+                            </div><br>
+                            <button class="accordion">Beyond Monet</button>
+                            <div class="panel">
+                                <p>
+                                    Date: 18th December 2021<br>
+                                    Time: 1200 EST<br>
+                                    Venue: Metro Toronto Convention Centre
+                                </p>
+                            </div><br>
+                            <button class="accordion">Luminato Festival</button>
+                            <div class="panel">
+                                <p>
+                                    Date: 23th December 2021<br>
+                                    Time: 1800 EST<br>
+                                    Venue: Scotiabank Arenas
+                                </p>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+
+                <script src="ListEvent.js"></script>
+            </div>
+        </body>
             <footer>
                 <div class="footernav">
                     <div>
@@ -74,5 +141,5 @@
                 
             </footer>
         </div>
-    </body>
+    
 </html>

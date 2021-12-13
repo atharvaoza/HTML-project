@@ -6,7 +6,7 @@ html {
 }
 
 body{
-    margin: 0px;
+    margin: auto;
 }
 
 #wrapper{
@@ -57,23 +57,68 @@ h1{
     text-align: center;
 }
 
-ul{
+#images{
     text-align: center;
-    /*display: flex;
-    flex-wrap: wrap;*/
 }
 
-ul li{
-    list-style-type: none;
+#slideshow{
+    width: 1000px;
+    height: 500px;
 }
 
-ul li a{
-    text-decoration: none;
-    font-size: 30px;
+#categories{
+    padding-left: 180px;
 }
 
-ul li img{
-    max-width: 200px;
+
+.accordion{
+    background-color: #eee;
+    color: #444;
+    padding: 18px;
+    width: 40%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.5;
+    /* float: left; */
+    clear: both;
+}
+
+.active, .accordion:hover{
+    background-color: #ccc;
+}
+
+.panel{
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    /* float: left; */
+    clear: both;
+}
+
+.accordionZ{
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 10px;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.5;
+    background-image: url('images/party.jpeg');
+}
+
+.active2, .accordionZ:hover{
+    background-color: #ccc;
+}
+
+#accordionZ{
+    background-image: url('images/party.jpeg');
+}
+
+#accordionZ1{
+    background-image: url('images/VanGogh.jpg');
 }
 
 /*footer style*/
@@ -85,6 +130,12 @@ footer{
     padding-bottom: 15px;
     font-family: 'Bebas Neue', cursive;
     color: white;
+    clear: both;
+    
+}
+
+li{
+    list-style: none;
 }
 
 footer p{
