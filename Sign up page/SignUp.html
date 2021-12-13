@@ -8,11 +8,13 @@
         <meta name="keywords" content="events, ontario, canada, toronto, festivals, concerts"/>
         <link rel="stylesheet" href="SignUp.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous"/>
         <title>Sign Up Page</title>
-
     </head>
 
     <body>
+        <div style="background-image: url('/groupassignment/phase1/SignUpPage/image/toronto-canada.jpg');  background-size: 100% 100%;">
+
       <header class="header" id="myHeader">
             
         <a href="#" class="nav_events">Ontario Events</a>
@@ -26,36 +28,31 @@
       </header>
         
       <main>
-            <form action="submitted.html" method="get">
-                <h3>Sign up to get updated on upcoming events in Ontario!</h2>
-            
-                  <div>
-                    <label for="name">Name</label>
+        
+            <form id="form" action="submitted.html" method="get">
+                <h3>Sign up to get updated on upcoming events in Ontario!</h3>
+                  
+                    <label for="full_name">Name</label>
                     <input type="text" id="full_name" name="name">
                     <span>*</span>
                     <p></p>
-                  </div>
-                
-                  <div>
+                  
                     <label for="email">Email</label>
                     <input type="text" id="email" name="email">
                     <span>*</span>
                     <p></p>
-                  </div>
                   
-                  <div>
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password">
                     <span>*</span>
                     <p></p>
-                  </div>
 
                   <div> 
                     <label>&nbsp;</label>
-                    <input type="button" id="submit" value="Create account">
+                    <input type="button" onclick="myFunction()" id="create" value="Create account">
                   </div>
-        
-              </form>
+    
+                 </form>
 
               <footer>
                 <div class="footer-nav">
@@ -66,7 +63,6 @@
                         <a href=""><i class="fa fa-twitter"></i></a> 
                     </div>
          
-            
                     <ul>
                         <li><a href=#>Events</a></li>
                         <li><a href=#>Organise</a></li>
@@ -84,7 +80,6 @@
                         <li><a href=#>Covid-19 Guidelines</a></li>
                         <li><a href=#>About</a></li>
                     </ul>
-        
                 </div>
     
                 <div class="copyright">
