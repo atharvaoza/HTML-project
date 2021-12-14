@@ -1,0 +1,143 @@
+
+
+body{
+  font-family: Lato, sans-serif;
+  background-image:url('../images/images.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  margin:0; padding:0;
+}
+
+.login {
+  margin:0 auto;
+  max-width:500px;
+}
+
+.login-header {
+  color:white;
+  text-align:center;
+  font-size:200%;
+  top: 0%;
+}
+
+
+
+.login-form h3 {
+  text-align:left;
+  margin-left:40px;
+  color: black;
+}
+
+.login-form {
+  box-sizing:border-box;
+  padding-top:15px;
+	padding-bottom:10%;
+  margin:5% auto;
+  text-align:center;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  max-width:400px;
+	width: 80%;
+  line-height:3em;
+  font-family: 'Ubuntu', sans-serif;
+  margin:1em 2em;
+  border-radius:5px;
+  border:2px solid black;
+  outline:none;
+  padding-left:10px;
+}
+.login-form input[type="button"] {
+  height:40px;
+  width:100px;
+  background:red;
+  border:1px solid black;
+  font-family: sans-serif;
+  cursor:pointer;
+}
+
+.login-form input[type="button"]:hover{
+  color: red;
+  background-color: white;
+}
+
+.sign-up{
+  color: red;
+  margin-left:-70%;
+  text-decoration:underline;
+  cursor: pointer;
+}
+.no-access {
+  color: black;
+  margin:20px 0px 20px -57%;
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+
+
+@media only screen and (min-width : 150px) and (max-width : 530px){
+ 
+  .login-form h3 {
+    text-align:center;
+    margin:0;
+  }
+  .sign-up, .no-access {
+    margin:10px 0;
+  }
+  .login-button {
+    margin-bottom:10px;
+  }
+}
+
+
+    
+@media screen and (min-width: 740px) {
+
+
+  footer {
+      font-family: sans-serif;
+      background-color: red;
+      color: white;
+      
+  
+  }
+   
+  
+  .container-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+  }
+  
+  
+  
+  footer a {
+      font-size: 1.1rem;
+      font-family: sans-serif;
+      text-decoration: none;
+      color: white;
+  }
+
+  .container-footer {
+    justify-content: space-around;
+    padding-top: 1.3rem;
+
+}
+
+footer ul {
+    gap: 0.3rem;
+}
+
+
+  
+  }
+  
