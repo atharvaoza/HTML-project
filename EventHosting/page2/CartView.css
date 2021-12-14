@@ -98,6 +98,24 @@ h1{
     align-items: center;
 }
 
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    padding: 12px 16px;
+    transform: translate(0%, -275%);
+}
+
+.close:hover {
+      background: #bbb;
+}
+
+#buttons{
+    text-align: center;
+    
+}
+
 /*footer style*/
 
 footer{
