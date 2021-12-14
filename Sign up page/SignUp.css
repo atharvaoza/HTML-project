@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 body {
     background-color: white;
-    font-family: sans-serif;
     margin: auto;
 }
 
@@ -16,25 +19,28 @@ body {
 
 header {
     background-color: red;
+    font-family: 'Bebas Neue', cursive;
     display: flex;
     justify-content: space-between;
     flex-flow: column-wrap;
     height: 90px;
     flex-direction: row;
     align-items: center;
+    font-size: 1.6rem;  
 }
 
 header .nav_events {
     position: relative;
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;  
+    font-size: 1.6rem;  
     margin-left: 40px;  
 }
 
 header ul {
     position: relative;
     display: flex;
+    font-family: 'Bebas Neue', cursive;
     flex-direction: row;
     gap: 1rem;
     list-style: none;
@@ -77,7 +83,6 @@ header a:hover {
 
 h2 {
     text-align: center;
-    margin: 20px 0px 50px 0;
     font-size: 20px;
 }
 
@@ -149,12 +154,13 @@ span {
     color: red;
 }
 
-/* footer*/
+/* footer style */
 
 footer {
-    font-family: sans-serif;
+    font-family: 'Bebas Neue', cursive;
     background-color:red;
     color: white;
+    font-size: 1.6rem; 
 }
 
 .footer-nav{
@@ -164,19 +170,32 @@ footer {
     flex-wrap: wrap;
 }
 
+footer a {
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+   }
+
+@media screen and (min-width: 740px) {
+
+    .footer-nav{
+        justify-content: space-around;
+        padding-top: 1.3rem;
+    }
+
+    footer ul {
+        gap: 0.3rem;
+    }
+}
+
 footer ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
     gap: 1.1rem;
+    padding: 10px 70px 10px 70px;
 }
-
-footer a {
-    font-size: 1.1rem;
-    font-family: sans-serif;
-    color: white;
-    text-decoration: none;
-   }
 
    footer a:hover {
     color: #000000;
