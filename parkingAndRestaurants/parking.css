@@ -85,7 +85,6 @@ header a:hover {
     text-decoration: underline;
 }
 
-
 /* For screen size greater than 740px*/
 @media screen and (min-width: 740px) {
     nav {
