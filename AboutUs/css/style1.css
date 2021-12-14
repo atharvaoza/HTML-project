@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: 	#F5F5F5;
+}
+
+/* Navbar */
+header {
+    background-color: #FF0000
+}
+
+nav {
+    font-size: 1.2rem;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+}
+
+nav ul , footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+nav a {
+    font-size: 1.6rem;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav a:hover , footer a:hover, .active {
+    color: #000000;
+    text-decoration: underline;
+}
+
+
+
+/* For screen size greater than 740px*/
+@media screen and (min-width: 740px) {
+    nav {
+        height: 8vh;
+        padding: 10px 70px 10px 70px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+}
+
+/*
+main {
+    height: 85vh
+
+}
+*/
+
+
+
+/* Footer */ 
+
+
+footer {
+    font-family: 'Bebas Neue', cursive;
+    background-color: #FF0000;
+    color: #ffffff;
+
+}
+ 
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+
+footer a {
+    font-size: 1.1rem;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media screen and (min-width: 740px) {
+
+    .container-footer {
+        justify-content: space-around;
+        padding-top: 1.3rem;
+
+    }
+
+    footer ul {
+        gap: 0.3rem;
+    }
+}
+
+
+.copyright {
+    display: flex;
+    justify-content: center;
+}
+
+.fab {
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.button {
+    font-size: 1rem;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: rgb(201, 74, 65);
+  }
+
+.btn-counter {
+    font-size:  1rem;
+    border: none;
+    background-color: inherit;
+    padding: 2px 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-block;
+    color: rgb(201, 74, 65);
+}
