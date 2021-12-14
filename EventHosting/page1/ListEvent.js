@@ -1,5 +1,6 @@
-let imgArray = ["images/Canadian-Opera-Company.jpg","images/bicycleView.jpg"
-                ,"images/image.jpg","images/shoes.jpg","images/party.jpeg","images/rhye.jpg"]
+let imgArray = ["images/Canadian-Opera-Company.jpg","images/bicycleView.jpg",
+                "images/image.jpg","images/shoes.jpg","images/party.jpeg",
+                "images/rhye.jpg","images/VanGogh.jpg"]
 
 let imgNumber = 0;
 let diff = imgArray.length - 1;

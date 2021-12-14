@@ -121,6 +121,21 @@ h1{
     background-image: url('images/VanGogh.jpg');
 }
 
+#accordionZ2{
+    background-image: url('images/Standup.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ArtP{
+    color: white;
+}
+
+.panel p{
+    text-align: left;
+    padding-left: 24pc;
+}
+
 /*footer style*/
 
 footer{
