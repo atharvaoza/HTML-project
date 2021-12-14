@@ -44,10 +44,51 @@ h1,h2,h3,h4,h5,h6{
 }
 
 
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 30px;
+    
+}
+
+.card {
+    border-style: solid;
+    padding: 5rem;
+}
+
+.newsletter {
+
+        text-align: center;
+        padding: 15px;
+}
+
+.error {
+    color: #FF0000;
+}
+form {
+    text-align: center;
+}
+
+form h3 {
+    color: black;
+}
+
+input {
+    padding: 5px;
+    width: 10rem;
+}
+
+#submit {
+    width: 6rem;
+}
+
 @media screen and (max-width: 740px) {
     .container-main {
         grid-template-columns: 1fr;
     }
+
+
 }
 
 hr {
@@ -62,6 +103,7 @@ hr {
     font-family: 'Roboto', sans-serif;
     gap: 5px;
     color: black;
+    margin-top: 40px;
 
 }
 
@@ -70,6 +112,7 @@ hr {
     font-size: 2rem;
     color: #FF0000
 }
+
 
 #column-1 p {
     text-align: center;    

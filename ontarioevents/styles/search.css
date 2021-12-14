@@ -32,6 +32,12 @@ form {
     margin-top: 50px;
 }
 
+main {
+    height: 85vh
+
+}
+
+
 @media screen and (min-width: 740px) {
     #search {
         width: 500px;
