@@ -16,10 +16,10 @@
         <div id="wrapper">
             <header>
                 <nav id="headernav">
-                    <a href="HOME.html">HOME</a>
-                    <a href="EVENT.html">EVENT</a>
-                    <a href="ORGANISE.html">ORGANISE</a>
-                    <a href="SEARCH.html">SEARCH</a>
+                    <a href="../Group/ontarioevents/index.html">HOME</a>
+                    <a href="../page1/EventList.html">EVENT</a>
+                    <a href="../page3/HostEvent.html">ORGANISE</a>
+                    <a href="../Group/ontarioevents/search.html">SEARCH</a>
                     <a href="LOG IN.html">LOG IN</a> 
                 </nav>
                 <img id="calender" src= "images/Calender.png">
@@ -27,7 +27,7 @@
             </header>
 
             
-            <form name="myForm" method="GET">
+            <form id="form" method="GET">
                 <div id="field1">
                     
                         <legend>
@@ -47,7 +47,9 @@
                         <br>
                         <p>Name your event</p>
                         <input type="text" id="nameEvent" name="eventName">
-                        <br>
+                        <span>*</span>
+                        <p></p>
+
                         <p>Start Date</p>
                         <input type="date" id="datePicker1" name="startDate">
                         <p>End Date</p>
@@ -57,9 +59,13 @@
                         <br>
                         <p>Venue</p>
                         <textarea id="venue" rows="2" cols="30"></textarea>
-                        <br>
+                        <span></span>
+                        <p></p>
+
                         <p>Description</p>
                         <textarea id="desc" rows="10" cols="50"></textarea>
+                        <span></span>
+                        <p></p>
                         <br><br>
                         <button id="subButton" onclick="validateForm()">
                             CREATE EVENT
@@ -79,21 +85,21 @@
                     </div>
         
                     <ul>
-                        <li><a href="">Events</a></li>
-                        <li><a href="">Organise</a></li>
+                        <li><a href="../page1/EventList.html">Events</a></li>
+                        <li><a href="../page3/HostEvent.html">Organise</a></li>
                         <li><a href="">Search</a></li>
                     </ul>
             
                     <ul>
                         <li><a href="">Log in</a></li>
-                        <li><a href="">Sign up</a></li>
+                        <li><a href="../Group/Sign up page/SignUp.html">Sign up</a></li>
                     </ul>
             
                     <ul>
-                        <li><a href="">Contact Us</a></li>
-                        <li><a href="" >FAQ</a></li>
-                        <li><a href="">Covid-19 Guidelines</a></li>
-                        <li><a href="">About</a></li>
+                        <li><a href="../Group/contact us page/styles/contact.html">Contact Us</a></li>
+                        <li><a href="../Group/FAQ page/styles/FAQs.html" >FAQ</a></li>
+                        <li><a href="../Group/covidSafetyGuidance/CovidSafety.html">Covid-19 Guidelines</a></li>
+                        <li><a href="../Group/AboutUs/index.html">About</a></li>
                     </ul>
                 </div>
         
